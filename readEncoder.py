@@ -13,18 +13,14 @@ originalPowerState = True
 originalPlayState = True
 originalVolume = 50
 
+
+blah blas
+
 serverIP = "192.168.11.3:9000"
 playerMAC = "b8:27:eb:17:25:b1"
 port = "/dev/ttys002"
 ser = serial.Serial(port)
 volumeStep = 5
-
-#>>> params={"p0":"pause", "player":"b8:27:eb:17:25:b1"}
-#>>> r = requests.get(url, params=params)
-#>>> r = requests.get(url, params=params)
-#>>> url = "http://192.168.11.3:9000/status.html"
-
-
 
 def getPlayerName():
 	return originalPlayerName 
