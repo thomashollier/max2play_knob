@@ -4,9 +4,9 @@
 Uses a digispark and a rotary encoder as a volume knob for a max2play squeezelite client.
 
 <H3>captureAndInstruct.py</H3>
-<LI>Uses adafruit's TrinketKeyboard library for arduino
-<LI>Uses pynput library to capture the digispark's key presses
-<LI>Uses requests library to send http commands to logitec server
+<LI>Uses adafruit's TrinketKeyboard library for arduino to generate keyboard key presses from the encoder switch
+<LI>Uses pynput library to capture the digispark's key press messages
+<LI>Uses requests library to send appropriate http commands to logitec server
 
 <H3>readEncoder.py</H3>
 This doesn't work with digispark because it doesn't provide a serial interface but it should work if you use a micro controller that does.
