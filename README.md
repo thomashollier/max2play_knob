@@ -1,15 +1,15 @@
 # max2play_knob
 
-<H3>rotaryKnobUSB.ino</H3>
-Uses a digispark and a rotary encoder as a volume knob for a max2play squeezelite client. This uses Adafruit TrinketKeyboard arduino library.
-
 <H3>rotaryKnobHID.ino</H3>
-Uses a digispark and a rotary encoder as a volume knob for a max2play squeezelite client. This uses the Adafruit trinket HID library and is the one I ended up using.
+This is an arduino sketch that uses a digispark board and a rotary encoder as a volume knob and pause toggle for a max2play squeezelite client. This uses the Adafruit trinket HID library.
 
 
-<H3>captureAndInstruct.py</H3>
-<LI>Uses pynput library to capture the digispark's key press messages
+<H3>Usbvolumeknob.tar</H3>
+A working version of a max2play plugin to use the volume knob above and send command to the server.
+<LI>Uses python evdev library to capture events from usb HID device
 <LI>Uses requests library to send appropriate http commands to logitec server
+<LI>Install script creates a systemd service to run the python script
 
-<H3>readEncoder.py</H3>
-This doesn't work with digispark because it doesn't provide a serial interface but it should work if you use a micro controller that does.
+<H3>Misc</H3>
+Dead ends and broken branches.
+
